@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparison Result</title>
+    <style>
+        body { font-family: Arial; padding: 2rem; background: #eef; }
+        table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+        th { background-color: #444; color: #fff; }
+    </style>
+</head>
+<body>
+    <h2>Comparison Between {{ c1['Country'] }} and {{ c2['Country'] }}</h2>
+    <table>
+        <tr><th>Attribute</th><th>{{ c1['Country'] }}</th><th>{{ c2['Country'] }}</th></tr>
+        <tr><td>Population</td><td>{{ c1['Population'] }}</td><td>{{ c2['Population'] }}</td></tr>
+        <tr><td>GDP (in USD)</td><td>{{ c1['GDP (in USD)'] }}</td><td>{{ c2['GDP (in USD)'] }}</td></tr>
+        <tr><td>Literacy Rate (%)</td><td>{{ c1['Literacy Rate (%)'] }}</td><td>{{ c2['Literacy Rate (%)'] }}</td></tr>
+        <tr><td>Area (sq km)</td><td>{{ c1['Area (sq km)'] }}</td><td>{{ c2['Area (sq km)'] }}</td></tr>
+        <tr><td>Capital</td><td>{{ c1['Capital'] }}</td><td>{{ c2['Capital'] }}</td></tr>
+    </table>
+    <p style="text-align:center; margin-top: 2rem;"><a href="/">Compare Another</a></p>
+</body>
+</html>

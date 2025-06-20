@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            background-color: #f5f5f5;
+        }
+        form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Compare Two Countries</h2>
+    <form action="/compare" method="post">
+        <label for="country1">Select First Country:</label>
+        <select name="country1" required>
+            <option value="">-- Choose Country --</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>China</option>
+            <option>Germany</option>
+            <option>Brazil</option>
+            <option>France</option>
+            <option>Japan</option>
+            <option>Russia</option>
+            <option>United Kingdom</option>
+            <option>Canada</option>
+            <option>Australia</option>
+            <option>Italy</option>
+            <option>South Korea</option>
+            <option>South Africa</option>
+            <option>Mexico</option>
+        </select>
+
+        <label for="country2">Select Second Country:</label>
+        <select name="country2" required>
+            <option value="">-- Choose Country --</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>China</option>
+            <option>Germany</option>
+            <option>Brazil</option>
+            <option>France</option>
+            <option>Japan</option>
+            <option>Russia</option>
+            <option>United Kingdom</option>
+            <option>Canada</option>
+            <option>Australia</option>
+            <option>Italy</option>
+            <option>South Korea</option>
+            <option>South Africa</option>
+            <option>Mexico</option>
+        </select>
+
+        <button type="submit">Compare</button>
+    </form>
+</body>
+</html>
